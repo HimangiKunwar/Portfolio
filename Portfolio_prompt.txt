@@ -1,0 +1,124 @@
+Create a professional, beautiful, multi-file React + Tailwind CSS portfolio website for Himangi Kunwar, a Full Stack Developer. Use Vite as the build tool. The project should be properly structured with separate components, pages, and assets — not a single file.
+
+📁 Project Structure
+portfolio/
+├── public/
+│   └── resume.pdf          (placeholder)
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Education.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── context/
+│   │   └── ThemeContext.jsx
+│   ├── data/
+│   │   └── portfolioData.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+
+🎨 Design Requirements
+
+Style: Clean, minimal, premium — like a hand-crafted designer portfolio
+Fonts: Use Google Fonts — Playfair Display for headings, Inter for body text
+Colors (Light mode): Background #f9f7f4, accent green #2d6a4f, text #1a1a1a, muted #6b6b6b
+Colors (Dark mode): Background #0f1117, surface #1a1d27, accent #4ade80, text #f1f5f9
+Smooth dark/light mode toggle using React Context API — persist preference in localStorage
+All sections have scroll-reveal fade-up animations using Intersection Observer or Framer Motion
+Fully responsive — mobile, tablet, desktop
+Active nav link highlighting based on scroll position
+Subtle hover micro-interactions on all cards and buttons
+
+
+👤 Personal Data (put all data in src/data/portfolioData.js)
+Name: Himangi Kunwar
+Role: Full Stack Developer
+Email: himangikunwar@gmail.com
+GitHub: https://github.com/HimangiKunwar
+LinkedIn: https://linkedin.com/in/himangi-kunwar-b13394240/
+Bio: Full Stack Developer with hands-on experience building scalable education platforms, REST APIs, and AI-integrated backend systems. Passionate about clean code, performance optimization, and end-to-end product delivery.
+
+🛠 Skills
+Group into categories:
+
+Backend: Python, Django, Django REST Framework, Node.js, Express.js
+Frontend: ReactJS, JavaScript, HTML5, CSS3, Tailwind CSS
+Database: PostgreSQL, MySQL, Pandas
+AI/ML: TensorFlow, Scikit-learn
+Tools & DevOps: AWS, GitHub Copilot, Git, Agile/Scrum, JWT Auth, REST API
+
+
+💼 Professional Experience
+Full-Stack Developer | RTC Knowledge Services Pvt. Ltd., Noida | October 2025 – Present
+
+Owned end-to-end backend development in Python, Django, and DRF for an education platform with 5+ user roles and role-based access control
+Shipped 10+ RESTful API endpoints for user management, assessments, and AI-powered evaluations, cutting frontend integration time by 20%
+Integrated 2 AI/ML models (TensorFlow, Scikit-learn) into backend services, automating student evaluations and reducing manual review effort by 50%
+Boosted frontend component delivery by 40% via GitHub Copilot across 5+ UI modules; slashed SQL query execution time by 30% through index tuning and N+1 elimination
+Maintained 99% production uptime via AWS pipelines while coordinating bi-weekly Agile sprints with a 3-member cross-functional team
+
+Full-Stack Developer Trainee | Chetu Inc., Noida | March 2025 – October 2025
+
+Completed a 7-month structured program building 3 full-stack Django projects covering REST APIs, JWT authentication, and React frontend integration
+Strengthened MySQL performance by 25% across 4 modules via composite indexing and query rewrites
+Reviewed 2 API integrations per sprint in a 4-person team, establishing code quality habits carried into the next role
+
+
+🎓 Education
+BCA in Computer Science | IITM Janakpuri, Delhi | 2020 – 2023
+
+🚀 Projects
+
+Learnify Pro — Online learning platform with course access, lecture streaming, and progress tracking. Instructors can upload materials and manage courses.
+
+Stack: Python, Django, ReactJS, REST API, PostgreSQL, HTML, CSS, JavaScript
+
+
+SmartSheet Pro — Web-based spreadsheet tool for organizing and analyzing tabular data with filtering, sorting, and collaborative updates.
+
+Stack: Python, Django, ReactJS, Pandas, REST API, PostgreSQL
+
+
+SOP System — Document management system for storing, sharing, and version-controlling Standard Operating Procedures within organizations.
+
+Stack: Python, Django, Django REST Framework, PostgreSQL, HTML, CSS, JavaScript
+
+
+CBT System — Online exam platform where students take digital tests that are automatically evaluated with instant result generation.
+
+Stack: Python, Django, REST API, MySQL/PostgreSQL, HTML, CSS, JavaScript
+
+
+
+
+✨ Sections to Build (in order)
+
+Navbar — Fixed top bar with logo "HK.", nav links, dark/light toggle button, smooth scroll
+Hero — Full viewport, animated name + role typewriter effect, short bio, two CTA buttons: "View Projects" and "Download Resume" (links to /public/resume.pdf)
+About — Two-column: bio paragraph left, animated stat cards right (4 projects, 2 companies, 3 years learning, 10+ APIs)
+Skills — Categorized skill cards with icons and tag pills, hover lift effect
+Experience — Vertical timeline with company, role, duration, and bullet points. Use alternating left/right layout on desktop
+Projects — Responsive 2-column card grid. Each card: project number, name, description, tech stack badges, and a GitHub link button
+Education — Clean card with degree, institution, location, and years
+Contact — Contact form (Name, Email, Message fields with styled inputs) + social link rows for Email, GitHub, LinkedIn
+Footer — Centered, minimal, with copyright and social icons
+
+
+⚙️ Technical Notes
+
+Use Tailwind CSS v3 with custom theme extension for colors and fonts in tailwind.config.js
+All static data in portfolioData.js — no hardcoded content in components
+Use useContext + localStorage for dark mode persistence
+Use react-icons for all icons (no emoji icons)
+Contact form should show a success message on submit (no backend needed — just UI state)
+Make sure package.json includes all dependencies: react, react-dom, react-icons, framer-motion, tailwindcss, vite
+Add a README.md with setup instructions: npm install → npm run dev
