@@ -48,7 +48,7 @@ const Hero = () => {
         >
           {/* Main name */}
           <motion.h1 
-            className="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-[0.2em] mb-6 text-glow"
+            className="font-display text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-[0.2em] mb-6 text-glow"
             style={{ fontFamily: 'Syne, sans-serif' }}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ const Hero = () => {
           >
             <button 
               onClick={scrollToProjects}
-              className="group glass-card px-8 py-4 rounded-lg border border-neon/30 bg-neon/10 hover:bg-neon/20 transition-all duration-300 flex items-center gap-3 text-neon hover:shadow-neon cursor-hover"
+              className="group glass-card px-8 py-4 rounded-lg border border-neon/30 bg-neon/10 hover:bg-neon/20 transition-all duration-300 flex items-center justify-center gap-3 text-neon hover:shadow-neon cursor-hover w-full sm:w-auto"
             >
               <span className="font-medium">VIEW PROJECTS</span>
               <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -102,7 +102,7 @@ const Hero = () => {
             
             <button 
               onClick={downloadResume}
-              className="group glass-card px-8 py-4 rounded-lg border border-white/20 hover:border-glow/50 transition-all duration-300 flex items-center gap-3 text-white hover:text-glow hover:shadow-glow cursor-hover"
+              className="group glass-card px-8 py-4 rounded-lg border border-white/20 hover:border-glow/50 transition-all duration-300 flex items-center justify-center gap-3 text-white hover:text-glow hover:shadow-glow cursor-hover w-full sm:w-auto"
             >
               <span className="font-medium">DOWNLOAD RESUME</span>
               <FiDownload className="group-hover:translate-y-1 transition-transform" />

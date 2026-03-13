@@ -52,7 +52,7 @@ const About = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Bio content */}
-            <motion.div className="space-y-6" variants={itemVariants}>
+            <motion.div className="space-y-6 w-full" variants={itemVariants}>
               <div className="glass-card p-8 rounded-lg glow-border">
                 <p className="text-muted text-lg leading-relaxed">
                   {portfolioData.about.bio}

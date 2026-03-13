@@ -46,11 +46,11 @@ const Skills = () => {
             {Object.entries(portfolioData.skills).map(([category, skills], categoryIndex) => (
               <motion.div
                 key={category}
-                className="relative"
+                className="relative overflow-hidden"
                 variants={itemVariants}
               >
                 {/* Category background label */}
-                <div className="absolute -top-8 left-0 text-6xl md:text-8xl font-bold uppercase opacity-5 pointer-events-none select-none text-neon" style={{ fontFamily: 'Syne, sans-serif' }}>
+                <div className="absolute -top-8 left-0 text-5xl md:text-8xl font-bold uppercase opacity-5 pointer-events-none select-none text-neon" style={{ fontFamily: 'Syne, sans-serif' }}>
                   {category}
                 </div>
                 
