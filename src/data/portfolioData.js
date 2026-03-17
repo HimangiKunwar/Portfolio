@@ -130,6 +130,20 @@ export const portfolioData = {
       technologies: ["Python", "TensorFlow", "Keras", "LSTM", "NLP", "NumPy"],
       githubUrl: "https://github.com/HimangiKunwar/Poetry_Generator",
     },
+    {
+      name: "Freelancer Management Portal",
+      subtitle: "CRUD-Based Web Application for Managing Freelancers & Projects",
+      description: "A web-based application built using Django to manage freelancers, clients, and project workflows in a centralized system. Developed during training at Chetu Inc. as part of my initial full-stack development experience.",
+      keyFeatures: [
+        "Add, update, and delete freelancer profiles with skills and contact details",
+        "Maintain structured client database with company details",
+        "Assign projects to freelancers and track status (Pending/Ongoing/Completed)",
+        "Record completed payments and track pending dues",
+        "Secure login/signup with role-based access for Admin and Users"
+      ],
+      technologies: ["Python", "Django", "HTML", "CSS", "SQLite", "MySQL", "Django Templates"],
+      githubUrl: "https://github.com/HimangiKunwar/Freelancer_management_Portal",
+    },
   ],
 
   achievements: [
