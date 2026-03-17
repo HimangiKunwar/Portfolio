@@ -115,6 +115,21 @@ export const portfolioData = {
       technologies: ["Python", "Django", "MySQL", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/HimangiKunwar/cbt_system",
     },
+    {
+      name: "AI Poetry Generator",
+      subtitle: "Deep Learning Based Text Generation System",
+      description: "An AI-based poetry generation system built using LSTM (Long Short-Term Memory) networks that learns character-level patterns from poetry datasets to generate creative and coherent poems.",
+      keyFeatures: [
+        "Generates poetry using deep learning sequence modeling",
+        "Uses character-level text generation for better creativity",
+        "Supports seed text input for controlled generation",
+        "Implements temperature-based sampling to balance randomness and coherence",
+        "Uses Bidirectional LSTM for improved context understanding",
+        "Applies dropout regularization to prevent overfitting"
+      ],
+      technologies: ["Python", "TensorFlow", "Keras", "LSTM", "NLP", "NumPy"],
+      githubUrl: "https://github.com/HimangiKunwar/Poetry_Generator",
+    },
   ],
 
   achievements: [
